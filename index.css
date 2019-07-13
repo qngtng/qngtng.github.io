@@ -2,7 +2,14 @@
   background-color: green !important; /*_fill*/
   border-color: green;
 }
-
+@font-face {
+  font-family: 'Glyphs';
+  src:  url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/fonts/glyphicons-halflings-regular.woff2') format('woff2'),
+        url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/fonts/glyphicons-halflings-regular.woff') format('woff');
+}
+.glyphicon {
+    font-family: 'Glyphs', sans-serif;
+}
 
 body {
   font-family: 'Lato', sans-serif;
@@ -312,4 +319,8 @@ footer a:hover {
 
 .last a {
   background-color: inherit !important;
+}
+
+.page-brand {
+  display:inline !important;
 }
