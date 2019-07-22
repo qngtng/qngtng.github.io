@@ -9,9 +9,9 @@ Using GitHub pages we can easily host this webpage for anyone to view.
 In order to follow these instructions you must have a GitHub (https://github.com/) account as well as a text editor. The instructions assume you are using a text editor called Atom. Download here: https://atom.io/
 
 ### Step 1: Get the code
-GitHub stores code in repositories. This tutorial calls them repo(s) as an abbreviation
+GitHub stores code in repositories. This tutorial calls them repo(s) as an abbreviation.
 
-Go to this repo https://github.com/BKrieger73/personal-webpage-fill-in in a new tab and click fork.
+Go to this repo https://github.com/BKrieger73/personal-webpage-fill-in in a new tab and click fork. (See the screenshot below)
 ![alt text](instructions/instructions_fork.jpg "fork a repo")
 
 This will copy the repo to your own github account. It takes a few seconds to complete.
@@ -57,12 +57,12 @@ There are the 3 large carousel images which are the first thing you see when you
 * carousel/carousel2.jpg
 * carousel/carousel3.jpg
 
-To replace these images, copy them to the carousel folder and rename the files `carousel1.jpg`, `carousel2.jpg`, and `carousel3.jpg` respectively. (Lowercase jpg)
+To replace these images, copy them to the carousel folder in your finder and rename the files `carousel1.jpg`, `carousel2.jpg`, and `carousel3.jpg` respectively. (Lowercase jpg)
 
 A profile picture: `profile.jpg`
 And a favicon: `favicon.ico` (https://favicon.io/ is a handy tool for generating favicons. (favicons are the cool little images that appear on the left hand side of the browser tab(the favicon for this website is currently a :D emoji)))
 
-When replacing `profile.jpg` and `favicon.ico` make sure they go in the same directory as the index.html
+When replacing `profile.jpg` and `favicon.ico` make sure they go in the same directory as the `index.html`.
 
 By replacing these images with your own images they will appear in the same way as the originals. Just make sure you use the same exact name as they are currently.
 
@@ -71,14 +71,41 @@ By replacing these images with your own images they will appear in the same way 
 Once you are happy with your new images and they look the way you want them to, upload them using the same process from Step 5. Be sure to upload the carousel images in the carousel directory!
 
 ### Step 7: Changing the color of the navbar
+We are able to easily change the color of the navbar to better match the images in your page.
+
+First we have to pick a color. Go to this webpage: https://color.adobe.com/create/color-wheel/
+
+Play around until you have a color you like. Copy the hex code below the color swatch.
+![alt text](instructions/instructions_color.jpg "choosing a new clor")
+
+Replace the key word `green` in the `index.css` file at lines 2 and 3, such that it reads like:
+```
+.navbar{
+  background-color: #9CFFDB !important; /*_fill*/
+  border-color: #9CFFDB;
+}
+```
+View the new navbar color by refreshing your webpage index.html in the browser.
 
 ### Step 8: Playing with HTML
+So far we have not yet actually written any HTML.
+
+Add a `<title>...</title>` to change the name that appears on the browser tab.
+
+Add additional bullet points to your lists by adding more <`li>...</li>`(li=list item). And remove them by backspacing `<li></li>` blocks.
+
+You can change your bullet lists to numbered lists by changing`<ul>...</ul>` (ul=unordered list) to `<ol>..</ol>` (ol=ordered lists)
+
+Learn more about how to update and change your html here:
 
 ### Step 9: Deploying our changes
 Back on your GitHub repo, click `Upload files`
 ![alt text](instructions/instructions_upload.jpg "upload to your repo")
 
-Add your `index.html` file. Scroll to the bottom of the page and click `Commit changes`
-![alt text](instructions/instructions_commit.jpg "upload to your repo")
+Add your `index.html` file from your finder/explorer. Scroll to the bottom of the page and click `Commit changes`
+![alt text](instructions/instructions_commit.jpg "commit your changes")
 
 After several minutes you should see the changes you uploaded reflected on `https://youruser.github.io/`
+
+## Credits.
+This webpage is based on https://tyleragreen.com/
